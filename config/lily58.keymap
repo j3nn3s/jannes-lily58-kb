@@ -31,11 +31,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp TILDE     &kp N1       &kp N2  &kp N3    &kp N4  &kp N5                                                          &kp N6               &kp N7  &kp N8     &kp N9   &kp N0     &kp MINUS
-&kp TAB       &kp Q        &kp W   &kp E     &kp R   &kp T                                                           &kp Y                &kp U   &kp I      &kp O    &kp P      &kp LC(BACKSPACE)
-&lt 1 ESCAPE  &kp A        &kp S   &kp D     &kp F   &kp G                                                           &kp H                &kp J   &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT     &mt LCTRL Z  &kp X   &kp C     &kp V   &kp B                    &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N                &kp M   &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-                                   &kp LALT  &tog 2  &mt LEFT_META BACKSPACE  &kp SPACE           &kp RET            &mt LCTRL BACKSPACE  &tog 1  &kp EQUAL
+&kp TILDE     &kp N1       &kp N2  &kp N3    &kp N4  &kp N5                                                      &kp N6               &kp N7     &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB       &kp Q        &kp W   &kp E     &kp R   &kp T                                                       &kp Y                &kp U      &kp I      &kp O    &kp P      &kp LC(BACKSPACE)
+&lt 1 ESCAPE  &kp A        &kp S   &kp D     &kp F   &kp G                                                       &kp H                &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT     &mt LCTRL Z  &kp X   &kp C     &kp V   &kp B                &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N                &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
+                                   &kp LALT  &tog 2  &mt LEFT_META SPACE  &kp SPACE           &kp RET            &mt LCTRL BACKSPACE  &kp EQUAL  &tog 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -50,7 +50,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp TILDE    &kp LC(NUMBER_1)  &kp LC(NUMBER_2)    &kp LC(NUMBER_3)    &kp LC(NUMBER_4)  &kp LC(N5)                                &kp LC(NUMBER_6)  &kp LC(N7)        &kp LC(N8)        &kp LC(N9)        &kp LC(N0)  &trans
+&kp GRAVE    &kp LC(NUMBER_1)  &kp LC(NUMBER_2)    &kp LC(NUMBER_3)    &kp LC(NUMBER_4)  &kp LC(N5)                                &kp LC(NUMBER_6)  &kp LC(N7)        &kp LC(N8)        &kp LC(N9)        &kp LC(N0)  &trans
 &kp LC(TAB)  &kp RC(Q)         &kp RC(W)           &kp LC(LS(RIGHT))   &kp LC(LS(R))     &kp LC(T)                                 &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)  &trans
 &trans       &kp LC(A)         &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT)                             &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT         &kp LC(P)   &kp LC(RS(P))
 &trans       &kp LC(Z)         &kp LC(X)           &kp LC(RS(C))       &kp LC(LS(V))     &kp LC(LS(LEFT_ARROW))  &trans    &trans  &kp LS(LC(LEFT))  &kp LC(LS(V))     &kp LS(LC(C))     &trans            &trans      &trans

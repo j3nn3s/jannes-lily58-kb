@@ -51,11 +51,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp GRAVE    &kp LA(NUMBER_1)  &kp LA(NUMBER_2)    &kp LA(NUMBER_3)    &kp LA(NUMBER_4)  &kp LA(N5)                                                             &kp LA(NUMBER_6)  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &kp LA(N0)     &kp RC(MINUS)
-&kp LC(TAB)  &kp RC(Q)         &kp RC(W)           &kp LC(LS(RIGHT))   &kp LC(LS(R))     &kp LC(T)                                                              &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)     &kp DEL
-&trans       &kp LC(A)         &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT)                                                          &kp LEFT_ARROW    &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT         &kp LC(P)      &kp LC(RS(P))
-&trans       &kp LC(Z)         &kp LC(X)           &kp LC(RS(C))       &kp LC(LS(V))     &kp LC(LS(LEFT_ARROW))  &kp LC(LEFT_BRACKET)    &kp LC(RIGHT_BRACKET)  &kp LS(LC(LEFT))  &kp LC(LS(V))     &kp LS(LC(C))     &kp RC(PERIOD)    &kp LC(SLASH)  &trans
-                                                   &trans              &trans            &trans                  &kp LC(SPACE)           &kp LC(ENTER)          &trans            &kp LC(EQUAL)     &kp LC(BSLH)
+&kp GRAVE    &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)   &kp LA(NUMBER_4)  &kp LA(N5)                                                             &kp LA(NUMBER_6)  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &kp LA(N0)     &kp RC(MINUS)
+&kp LC(TAB)  &kp RC(Q)         &kp RC(W)         &kp LC(LS(RIGHT))  &kp LC(LS(R))     &kp LC(T)                                                              &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)     &kp DEL
+&trans       &kp LC(A)         &kp LC(S)         &kp LC(D)          &kp LC(F)         &kp LS(LC(G))                                                          &kp LEFT          &kp DOWN_ARROW    &kp UP_ARROW      &kp RIGHT         &kp LC(P)      &kp LC(RS(P))
+&trans       &kp LC(Z)         &kp LC(X)         &kp LC(RS(C))      &kp LC(LS(V))     &kp LC(LS(LEFT_ARROW))  &kp LC(LEFT_BRACKET)    &kp LC(RIGHT_BRACKET)  &kp LC(N)         &kp LC(M)         &kp LC(COMMA)     &kp RC(PERIOD)    &kp LC(SLASH)  &trans
+                                                 &trans             &trans            &trans                  &kp LC(SPACE)           &kp LC(ENTER)          &trans            &kp LC(EQUAL)     &kp LC(BSLH)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

@@ -11,17 +11,12 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
     behaviors {
-        raise_layer_hold_composite: raise-layer-hold-composite {
-            compatible = "behaviors.composite";
-            bindings = <&mo 1 &kp F13>;
-        };
         raise_layer_tap_signal: raise-layer-tap-signal {
             compatible = "behaviors.hold-tap";
-            bindings = <&raise_layer_hold_composite &kp ESCAPE>;
+            bindings = <&mo 1 &kp F13>, <&kp ESCAPE>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
         };
-
         lower_layer_toggle_signal: lower-layer-toggle-signal {
             compatible = "behaviors.composite";
             bindings = <&tog 2 &kp F14>;

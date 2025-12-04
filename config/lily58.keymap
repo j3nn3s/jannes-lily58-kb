@@ -10,7 +10,20 @@
 
 / {
     // Activate ADJUST layer by pressing raise and lower
-
+    behaviors {
+        raise_layer_signal: raise-layer-signal {
+            compatible = "behaviors.composite";
+            bindings = <&lt 1 ESCAPE &kp F13>;
+        };
+        lower_layer_toggle_signal: lower-layer-toggle-signal {
+            compatible = "behaviors.composite";
+            bindings = <&tog 2 &kp F14>;
+        };
+        layer3_toggle_signal: layer3-toggle-signal {
+            compatible = "behaviors.composite";
+            bindings = <&tog 3 &kp F15>;
+        };
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
 

@@ -47,9 +47,9 @@
             bindings = <
 &kp GRAVE     &kp N1  &kp N2  &kp N3  &kp N4    &kp N5                                                      &kp N6               &kp N7     &kp N8     &kp N9   &kp N0     &kp MINUS
 &kp TAB       &kp Q   &kp W   &kp E   &kp R     &kp T                                                       &kp Y                &kp U      &kp I      &kp O    &kp P      &kp LC(BACKSPACE)
-&lt 1 ESCAPE  &kp A   &kp S   &kp D   &kp F     &kp G                                                       &kp H                &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
+&raise_layer_signal  &kp A   &kp S   &kp D   &kp F     &kp G                                                       &kp H                &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LSHFT     &kp Z   &kp X   &kp C   &kp V     &kp B                &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N                &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-                              &tog 2  &kp LALT  &mt LEFT_META SPACE  &kp SPACE           &kp RET            &mt LCTRL BACKSPACE  &kp EQUAL  &kp BSLH
+                &lower_layer_toggle_signal  &kp LALT  &mt LEFT_META SPACE  &kp SPACE           &kp RET            &mt LCTRL BACKSPACE  &kp EQUAL  &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -68,7 +68,7 @@
 &kp LC(TAB)  &kp RC(Q)         &kp RC(W)         &kp LC(LS(RIGHT))  &kp LC(LS(R))     &kp LC(T)                                                              &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)          &kp LA(NUMBER_4)  &kp LA(N5)     &kp DEL
 &trans       &kp LC(A)         &kp LC(S)         &kp LC(D)          &kp LC(F)         &kp LS(LC(G))                                                          &kp LEFT          &kp DOWN_ARROW    &kp UP_ARROW              &kp RIGHT         &kp LC(P)      &kp LC(RS(P))
 &trans       &kp LC(Z)         &kp LC(X)         &kp LC(RS(C))      &kp LC(LS(V))     &kp LC(LS(LEFT_ARROW))  &kp LC(LEFT_BRACKET)    &kp LC(RIGHT_BRACKET)  &kp LC(N)         &kp LC(M)         &kp LC(COMMA)             &kp RC(PERIOD)    &kp LC(SLASH)  &trans
-                                                 &tog 3             &trans            &trans                  &kp LC(SPACE)           &kp LC(ENTER)          &trans            &kp LC(EQUAL)     &kp LC(NON_US_BACKSLASH)
+                                    &layer3_toggle_signal             &trans            &trans                  &kp LC(SPACE)           &kp LC(ENTER)          &trans            &kp LC(EQUAL)     &kp LC(NON_US_BACKSLASH)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -99,7 +99,7 @@
 &kp TAB    &kp Q   &kp W   &kp E   &kp R              &kp T                                             &kp Y                    &kp U      &kp I      &kp O    &kp P      &kp LC(BACKSPACE)
 &kp LCTRL  &kp A   &kp S   &kp D   &kp F              &kp G                                             &kp H                    &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C   &kp V              &kp B      &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N                    &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-                           &tog 3  &kp RIGHT_CONTROL  &kp SPACE  &kp SPACE           &kp RET            &mt LEFT_META BACKSPACE  &kp EQUAL  &kp BSLH
+                       &layer3_toggle_signal  &kp RIGHT_CONTROL  &kp SPACE  &kp SPACE           &kp RET            &mt LEFT_META BACKSPACE  &kp EQUAL  &kp BSLH
             >;
 
             sensor-bindings =
